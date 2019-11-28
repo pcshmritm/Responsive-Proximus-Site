@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/css/uikit.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/js/uikit-icons.min.js"></script>
+    <title>Document</title>
+</head>
+<style>
+@media (max-width: 400px) {
+  #demo{
+      display:none
+  }
+}
+</style>
+<body>
+      
+
+    <div id="demo" class="uk-margin-medium-right uk-width-expand uk-padding-small" style="top:0;position: fixed;background-color: white; z-index: +1;width: 100%; " >
+        <ul  uk-tab>
+            <i class="large material-icons">graphic_eq</i>
+            <li class="uk-active uk-margin-medium-bottom"><a href="#" style=" font-family: 'Poppins san-serif';" uk-scroll>PROXIMUS
+            <li><a href="#demo2" style=" font-family: 'Poppins san-serif';" uk-scroll>Overview</a></li>
+            <li><a href="#demo3" style=" font-family: 'Poppins san-serif';" uk-scroll>Technologies</a></li>
+            <li><a href="#demo4" style=" font-family: 'Poppins san-serif';" uk-scroll>Workshops</a></li>
+            <li><a href="#demo5" style=" font-family: 'Poppins san-serif';" uk-scroll>Team</a></li>
+            <li><a href="#demo6" style=" font-family: 'Poppins san-serif';" uk-scroll>FAQ</a></li>
+        </ul>
+    </div>
+    <a href="#offcanvas-slide" class="uk-button uk-button-default" uk-toggle ><span class="uk-margin-small-right" uk-icon="menu"></span>
+        <span class="uk-margin-xlarge-left uk-text-center">PROXIMUS CODING SOCIETY</span>
+    </a>
+   
+
+    <div id="offcanvas-slide" uk-offcanvas>
+        <div class="uk-offcanvas-bar">
+    
+            <ul class="uk-nav uk-nav-default">
+                <li class="uk-active"><a href="#">PROXIMUS</a></li>
+                <li><a href="#demo2">Overview</a></li>
+                <li><a href="#demo3">Technologies</a></li>
+                <li><a href="#demo4">Workshops</a></li>
+                <li><a href="#demo5">Team</a></li>
+                <li><a href="#demo6">FAQ</a></li>
+            </ul>
+    
+        </div>
+    </div>
+
+    <div uk-grid class="uk-child-width-expand@s uk-text-center uk-margin-xlarge-top " >
+        <div class="uk-margin-xlarge-top ">
+            <h1 style=" font-family: 'Poppins san-serif';" class="uk-margin-medium-top ">Proximus Coding Society<br>
+                <spnan class="blue-text"><a style="text-decoration:none" href="http://www.hmritm.ac.in/">HMRITM.</a></spnan>
+            </h1>
+
+            <h4><span style=" font-family: 'Poppins san-serif';">Proximus Coding Society is a program for</span>&nbsp;&nbsp;
+                <br>
+                <span style=" font-family: 'Poppins san-serif';">college students to learn <span class="color1"><strong>mobile</strong></span>
+                    and
+                    <span style=" font-family: 'Poppins san-serif';"><strong>web development</strong></span> skills,</span>
+                <br>
+                <span style=" font-family: 'Poppins san-serif';"><strong>design thinking</strong></span> skills and
+                <span class=" color4"><strong>leadership</strong></span>
+                skills.
+            </h4>
+        </div>
+        <div class="uk-margin-xlarge-top ">
+            <img src="./images/diversity.png" alt="" style="max-width:100%;height:auto;" class="uk-margin-medium-top ">
+        </div>
+    </div>
+
+    
+    <div id="demo2"></div>
+    <div uk-grid class="uk-child-width-expand@s uk-text-center uk-margin-xlarge-top" >
+        <div class="uk-card uk-card-default uk-card-hover"  >
+            <i class="fa fa-rocket" aria-hidden="true" style="margin-top: 20px;
+             font-size: 65px;
+             color: skyblue;"></i>
+            <h3 style=" font-family: 'Poppins san-serif';" >Concept Of PCS</h3>
+            <p style=" font-family: 'Poppins san-serif';">
+                The PCS program is a grassroots channel <br>
+                through which Google provides <br>
+                development skills, mobile and web <br>
+                development skills for students, towards <br>
+                employability.
+            </p>
+        </div>
+
+        <div class="uk-card uk-card-default uk-card-hover">
+            <i class="fa fa-lightbulb-o" aria-hidden="true" style="  margin-top: 20px;
+             font-size: 65px;
+             color: rgb(135, 235, 152);"></i>
+            <h3 style=" font-family: 'Poppins san-serif';">Why PCS?</h3>
+            <p style=" font-family: 'Poppins san-serif';">
+                For students to learn development skills, <br>
+                solve problems through technology and <br>
+                inspire them to be world class developers<br>
+                and changemakers.
+            </p>
+        </div>
+
+        <div class="uk-card uk-card-default uk-card-hover">
+
+            <span uk-icon="icon: user; ratio: 3" class="uk-margin-top" style="color:red"></span>
+            <h3 style=" font-family: 'Poppins san-serif';">Target audience</h3>
+            <p style=" font-family: 'Poppins san-serif';">
+                PCS activities are targeted at University <br>
+                students and any others including faculty<br>
+                members who want to learn development<br>
+                skills & work to solve real-life problems.
+            </p>
+        </div>
+
+    </div>
+
+
+
+    <div class="uk-margin-xlarge-top uk-margin-medium-left" >
+        <h1 class="uk-text-center " style=" font-family: 'Poppins san-serif'; ">Opportunities PCS provide students with</h1>
+        <div uk-grid class="uk-child-width-expand@s uk-text-center  uk-margin-large-top">
+
+
+            <div>
+                <p style=" font-family: 'Poppins san-serif';">Grow their knowledge on developer technologies and more
+                    through peer<br>
+                    to peer workshops and events.</p>
+                <p style=" font-family: 'Poppins san-serif';">
+                    Showcase their prototypes and solutions to their local community and <br>
+                    industry leaders.
+                </p>
+            </div>
+            <div>
+                <p style=" font-family: 'Poppins san-serif';">Grow their knowledge on developer technologies and more
+                    through peer<br>
+                    to peer workshops and events.</p>
+                <p style=" font-family: 'Poppins san-serif';">
+                    Showcase their prototypes and solutions to their local community and <br>
+                    industry leaders.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="uk-margin-xlarge-top" id="demo3">
+
+
+        <div class="uk-text-center">
+
+            <h1 class="uk-text-center" style=" font-family: 'Poppins san-serif';">Technologies we're excited about</h1><br>
+            <strong>
+                <p style=" font-family: 'Poppins san-serif';">Opportunities to learn & access deep technical content.
+                </p>
+            </strong>
+        </div>
+
+        <div class="uk-child-width-expand@s uk-text-center " uk-grid>
+            <div class="first-technologyDiv">
+                <img src="./images/android.png" id="androidImg" >
+            </div>
+            <div class="second-technologyDiv">
+                <h1 style=" font-family: 'Poppins san-serif';">Android Development</h1><br>
+                <p style=" font-family: 'Poppins san-serif';">
+                    Every year Google developers release exciting new <br>
+                    updates to the world's most popular operating system.<br>
+                    We always have sessions to keep you updated and mastering <br>
+                    the latest trends in modern Android <br>
+                    development.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="uk-margin-xlarge-top">
+            <div class="uk-child-width-expand@s uk-text-center " data-uk-grid>
+                <div>
+                    <h1 style=" font-family: 'Poppins san-serif';">Web Development</h1><br>
+                    <p style=" font-family: 'Poppins san-serif';">
+                        Learn the core foundations of a delightful web<br>
+                        experience both for the user and developer. Stay up to <br>
+                        tabs with emerging and trending technologies. Get <br>
+                        access to a guided, tutorial and hands-on coding<br>
+                        experience.
+                    </p>
+                </div>
+                <div class="first-technologyDiv">
+                    <img src="./images/web.png" id="androidImg" style="width:100%">
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+    <div class="uk-margin-xlarge-top" id="demo4">
+
+        <div class="uk-text-center">
+            <h1><strong>Events & Workshops</strong></h1>
+            <p>Come learn, share and connect with us in person.</p>
+        </div>
+
+        <ul class="uk-child-width-expand@s uk-text-center uk-margin-large-top" uk-tab>
+
+            <li class="workshope-event2-inner1">
+                <a href="event.html" style="font-size: 20px;">Upcoming Events</a>
+            </li>
+
+            <li class="workshope-event2-inner2">
+                <a href="pastEvent.html" style="font-size: 20px;">past Events</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="uk-margin-xlarge-top" id="demo5">
+        <div></div>
+        <div class="uk-child-width-expand@s uk-text-center uk-margin-xlarge-top">
+            <h1 style=" font-family: 'Poppins san-serif';">Meet The PCS Team</h1>
+            <p style=" font-family: 'Poppins san-serif';">Passionate students and faculty staff driving the success of
+                the program.</p>
+        </div>
+        <div class="uk-child-width-expand@s uk-text-center " data-uk-grid>
+            <div >
+                <img src="./images/badAas.png" id="img1" width="70%" style="border-radius:50%" class="uk-card-default">
+            </div>
+            <div class="team3" >
+                <img src="./images/badAas.png" id="img2" width="70%" style="border-radius:50%">
+            </div>
+
+            <div class="team3">
+                <img src="./images/badAas.png" id="img3" width="70%" style="border-radius:50%">
+            </div>
+        </div>
+    </div>
+
+   
+    <div class="uk-margin-xlarge-top" style="font-family: 'Poppins san-serif';">
+<div id="demo6"></div>
+        <h1 class="uk-text-center" style=" font-family: 'Poppins san-serif';">Frequently Asked Questions</h1>
+        <div data-uk-grid class="uk-child-width-expand@s uk-text-center uk-margin-xlarge-top">
+            <div>
+                <h3 style=" font-family: 'Poppins san-serif';">Who can become a member?</h3>
+                <p style=" font-family: 'Poppins san-serif';">The clubs is open to any student, ranging from novice
+                    developers who are just <br>
+                    starting, to advanced developers who want to further their skills.</p>
+
+                <h3 style=" font-family: 'Poppins san-serif';">How frequently do events and workshops occur?</h3>
+                <p style=" font-family: 'Poppins san-serif';">
+                    We have a hands-on session Twice a Months. We also hold workshops and <br>
+                    showcases & we would recommend you to join our community by Filling Form to get <br>
+                    updates.
+                </p>
+            </div>
+            <div>
+
+                <h3 style=" font-family: 'Poppins san-serif';">What should I carry when attending a workshop?</h3>
+                <p style=" font-family: 'Poppins san-serif';">We recommend you carry with you a notebook, pen and a
+                    laptop because more <br>
+                    often than not we make our hands dirty with code. Most importantly, carry along a <br>
+                    healthy dose of curiosity and enthusiasm.</p>
+
+                <h3 style=" font-family: 'Poppins san-serif';">Who should I reach out to if I have any questions?</h3>
+                <p style=" font-family: 'Poppins san-serif';">
+                    If you have any questions or comments, please don't hesitate to contact us by<br>
+                    clicking the button below. We would be happy to stay engaged via email even after <br>
+                    the event
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="uk-margin-xlarge-top">
+        <div class="uk-margin-medium-left">
+            <h1 style="font-family:'Poppins san-serif'">Proximus Coding Society</h1>
+            <p style="font-family: 'Poppins san-serif';">© 2019 | All Rights Reserved.</p>
+        </div>
+        <div class="uk-margin-xlarge-top uk-text-center">
+            Made with <i class="fa fa-heart"></i> by saurabh singh.
+        </div>
+    </div>
+    <div class="uk-margin-xlarge-bottom"></div>
+
+</body>
+
+</html>
