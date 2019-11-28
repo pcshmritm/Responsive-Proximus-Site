@@ -16,24 +16,55 @@
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/js/uikit-icons.min.js"></script>
     <title>Document</title>
 </head>
-
+<style>
+@media (max-width: 400px) {
+  #demo{
+      display:none
+  }
+}
+@media (min-width: 400px) {
+  #collapse{
+      display:none
+  }
+}
+</style>
 <body>
-    <div class="uk-margin-medium-right uk-width-expand uk-padding-small" style="top:0;position: fixed;background-color: white; z-index: +1;width: 100%">
-        <ul uk-tab>
+      
+
+    <div id="demo" class="uk-margin-medium-right uk-width-expand uk-padding-small" style="top:0;position: fixed;background-color: white; z-index: +1;width: 100%; " >
+        <ul  uk-tab>
             <i class="large material-icons">graphic_eq</i>
-            <li class="uk-active uk-margin-medium-bottom"><a href="#" style=" font-family: 'Poppins san-serif';">PROXIMUS
-                    CODING SOCIETY</a></li>
-            <li><a href="#demo" style=" font-family: 'Poppins san-serif';">Overview</a></li>
-            <li><a href="#demo2" style=" font-family: 'Poppins san-serif';">Technologies</a></li>
-            <li><a href="#demo3" style=" font-family: 'Poppins san-serif';">Workshops</a></li>
-            <li><a href="#demo4" style=" font-family: 'Poppins san-serif';">Team</a></li>
-            <li><a href="#demo5" style=" font-family: 'Poppins san-serif';">FAQ</a></li>
+            <li class="uk-active uk-margin-medium-bottom"><a href="#" style=" font-family: 'Poppins san-serif';" uk-scroll>PROXIMUS
+            <li><a href="#demo2" style=" font-family: 'Poppins san-serif';" uk-scroll>Overview</a></li>
+            <li><a href="#demo3" style=" font-family: 'Poppins san-serif';" uk-scroll>Technologies</a></li>
+            <li><a href="#demo4" style=" font-family: 'Poppins san-serif';" uk-scroll>Workshops</a></li>
+            <li><a href="#demo5" style=" font-family: 'Poppins san-serif';" uk-scroll>Team</a></li>
+            <li><a href="#demo6" style=" font-family: 'Poppins san-serif';" uk-scroll>FAQ</a></li>
         </ul>
     </div>
+    <a href="#offcanvas-slide" id="collapse" class="uk-button uk-button-default uk-width-expand" uk-toggle style="top:0; position:fixed; background-color:white; z-index: +1" ><span class="uk-margin-small-right" uk-icon="menu"></span>
+        <span class="uk-margin-xlarge-left uk-text-center">PROXIMUS CODING SOCIETY</span>
+    </a>
+   
 
-    <div uk-grid class="uk-child-width-expand@s uk-text-center uk-margin-xlarge-top " id="demo">
-        <div>
-            <h1 style=" font-family: 'Poppins san-serif';">Proximus Coding Society<br>
+    <div id="offcanvas-slide" uk-offcanvas>
+        <div class="uk-offcanvas-bar">
+    
+            <ul class="uk-nav uk-nav-default">
+                <li class="uk-active"><a href="#">PROXIMUS</a></li>
+                <li><a href="#demo2">Overview</a></li>
+                <li><a href="#demo3">Technologies</a></li>
+                <li><a href="#demo4">Workshops</a></li>
+                <li><a href="#demo5">Team</a></li>
+                <li><a href="#demo6">FAQ</a></li>
+            </ul>
+    
+        </div>
+    </div>
+
+    <div uk-grid class="uk-child-width-expand@s uk-text-center uk-margin-xlarge-top " >
+        <div class="uk-margin-xlarge-top ">
+            <h1 style=" font-family: 'Poppins san-serif';" class="uk-margin-medium-top ">Proximus Coding Society<br>
                 <spnan class="blue-text"><a style="text-decoration:none" href="http://www.hmritm.ac.in/">HMRITM.</a></spnan>
             </h1>
 
@@ -48,18 +79,19 @@
                 skills.
             </h4>
         </div>
-        <div>
-            <img src="./images/diversity.png" alt="" style="max-width:100%;height:auto;">
+        <div class="uk-margin-xlarge-top ">
+            <img src="./images/diversity.png" alt="" style="max-width:100%;height:auto;" class="uk-margin-medium-top ">
         </div>
     </div>
 
+    
+    <div id="demo2"></div>
     <div uk-grid class="uk-child-width-expand@s uk-text-center uk-margin-xlarge-top" >
-
-        <div class="uk-card uk-card-default uk-card-hover">
+        <div class="uk-card uk-card-default uk-card-hover"  >
             <i class="fa fa-rocket" aria-hidden="true" style="margin-top: 20px;
              font-size: 65px;
              color: skyblue;"></i>
-            <h3 style=" font-family: 'Poppins san-serif';" id="demo2">Concept Of PCS</h3>
+            <h3 style=" font-family: 'Poppins san-serif';" >Concept Of PCS</h3>
             <p style=" font-family: 'Poppins san-serif';">
                 The PCS program is a grassroots channel <br>
                 through which Google provides <br>
@@ -98,8 +130,8 @@
 
 
 
-    <div class="uk-margin-xlarge-top uk-margin-medium-left" id="demo3">
-        <h1 class="uk-text-center" style=" font-family: 'Poppins san-serif';">Opportunities PCS provide students with</h1>
+    <div class="uk-margin-xlarge-top uk-margin-medium-left" >
+        <h1 class="uk-text-center " style=" font-family: 'Poppins san-serif'; ">Opportunities PCS provide students with</h1>
         <div uk-grid class="uk-child-width-expand@s uk-text-center  uk-margin-large-top">
 
 
@@ -125,7 +157,7 @@
     </div>
 
 
-    <div class="uk-margin-xlarge-top">
+    <div class="uk-margin-xlarge-top" id="demo3">
 
 
         <div class="uk-text-center">
@@ -139,7 +171,7 @@
 
         <div class="uk-child-width-expand@s uk-text-center " uk-grid>
             <div class="first-technologyDiv">
-                <img src="./images/android.png" id="androidImg" style="width:100%">
+                <img src="./images/android.png" id="androidImg" >
             </div>
             <div class="second-technologyDiv">
                 <h1 style=" font-family: 'Poppins san-serif';">Android Development</h1><br>
@@ -179,7 +211,7 @@
     </div>
 
 
-    <div class="uk-margin-xlarge-top">
+    <div class="uk-margin-xlarge-top" id="demo4">
 
         <div class="uk-text-center">
             <h1><strong>Events & Workshops</strong></h1>
@@ -198,29 +230,29 @@
         </ul>
     </div>
 
-    <div class="uk-margin-xlarge-top">
+    <div class="uk-margin-xlarge-top" id="demo5">
         <div class="uk-child-width-expand@s uk-text-center uk-margin-xlarge-top">
-            <h1 style=" font-family: 'Poppins san-serif';">Meet The PCS Team</h1>
+            <h1 style=" font-family: 'Poppins san-serif';" class="uk-margin-xlarge-top">Meet The PCS Team</h1>
             <p style=" font-family: 'Poppins san-serif';">Passionate students and faculty staff driving the success of
                 the program.</p>
         </div>
-        <div data-uk-grid>
-            <div style="border-radius:50%">
-                <img src="./images/badAas.png" id="img1" style="width:100%">
+        <div class="uk-child-width-expand@s uk-text-center " data-uk-grid>
+            <div >
+                <img src="./images/badAas.png" id="img1" width="70%" style="border-radius:50%" class="uk-card-default">
             </div>
-            <div class="team3" style="border-radius:50%">
-                <img src="./images/badAas.png" id="img2" style="width:100%">
+            <div class="team3" >
+                <img src="./images/badAas.png" id="img2" width="70%" style="border-radius:50%">
             </div>
 
-            <div class="team3" style="border-radius:50%">
-                <img src="./images/badAas.png" id="img3" style="width:100%">
+            <div class="team3">
+                <img src="./images/badAas.png" id="img3" width="70%" style="border-radius:50%">
             </div>
         </div>
     </div>
 
-    <div id="demo5"></div>
+   
     <div class="uk-margin-xlarge-top" style="font-family: 'Poppins san-serif';">
-
+<div id="demo6"></div>
         <h1 class="uk-text-center" style=" font-family: 'Poppins san-serif';">Frequently Asked Questions</h1>
         <div data-uk-grid class="uk-child-width-expand@s uk-text-center uk-margin-xlarge-top">
             <div>
